@@ -62,10 +62,24 @@ h3 {
     gap: 20px;
 }
 
-.image-time span {
+.image-time .time {
 
     font-size: 30px;
     font-weight: bold;
+}
+
+.weather {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between
+}
+
+ .weather-icon img{
+
+    display: inline-block;
+    width: 30px;  
 }
 p {
 

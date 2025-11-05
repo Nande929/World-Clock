@@ -8,6 +8,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.min.js"></script>
 </head>
 <body>
 
@@ -24,72 +27,72 @@
             <option value="dubai">Dubai</option>
         </select>
 
-        <div class="city-container">
+        <div class="city-container" id="berlin">
 
             <div>
                 <h3>Berlin</h3>
-                <small>November 3rd 2025</small>
+                <small class="date"></small>
             </div>
             <div class="image-time">
                 <div>
-                    <span>14:49</span>
+                    <span class="time"></span>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <p>13&deg;</p>
+                <div class="weather">
+                   <span class="weather-icon"></span>
+                    <p id="berlin-temp"></p>
                 </div>
             </div>
         </div>
 
-        <div class="city-container">
+        <div class="city-container" id="nairobi">
             <div>
                 <h3>Nairobi</h3>
-                <small>November 3rd 2025</small>
+                <small class="date">November 3rd 2025</small>
             </div>
            <div class="image-time">
                 <div>
-                    <span>14:49</span>
+                    <span class="time">14:49</span>
                 </div>
-                <div>
-                    <img src="" alt="">
-                    <p>13&deg;</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="city-container">
-            <div>
-                <h3>Durban</h3>
-                <small>November 3rd 2025</small>
-            </div>
-            <div class="image-time">
-                <div>
-                    <span>14:49</span>
-                </div>
-                <div>
-                    <img src="" alt="">
-                    <p>13&deg;</p>
+                <div class="weather">
+                    <div class="weather-icon"></div>
+                    <p id="nairobi-temp">13&deg;</p>
                 </div>
             </div>
         </div>
 
-        <div class="city-container">
+        <div class="city-container" id="johannesburg">
             <div>
-                <h3>Dallas</h3>
-                <small>November 3rd 2025</small>
+                <h3>Johannesburg</h3>
+                <small class="date">November 3rd 2025</small>
             </div>
             <div class="image-time">
                 <div>
-                    <span>14:49</span>
+                    <span class="time">14:49</span>
                 </div>
+                <div class="weather">
+                    <span class="weather-icon"></span>
+                    <p id="johannesburg-temp"></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="city-container" id="denver">
+            <div>
+                <h3>Denver</h3>
+                <small class="date">November 3rd 2025</small>
+            </div>
+            <div class="image-time">
                 <div>
-                    <img src="" alt="">
-                    <p>13&deg;</p>
+                    <span class="time">14:49</span>
+                </div>
+                <div class="weather">
+                    <span class="weather-icon"></span>
+                    <p id="denver-temp"></p>
                 </div>
             </div>
         </div>
     </div>
     <footer>Coded with ❤️ by <a href="https://github.com/Nande929">Nande Nqetho </a>available on <a href="https://github.com/Nande929/World-Clock">Github</a> and <a href="https://basicworld-clock.netlify.app/">Netlify</a></footer>
-    
+    <script src="index.js"></script>
 </body>
 </html>
