@@ -7,7 +7,7 @@ function displayClock () {
 
 
     berlinDateElement.innerHTML = berlinTime.format("MMMM Do YYYY");
-    berlinTimeElement.innerHTML = berlinTime.format("HH:mm");
+    berlinTimeElement.innerHTML = berlinTime.format("HH:mm:ss");
 
     //Nairobi
 
@@ -18,7 +18,7 @@ function displayClock () {
 
 
     nairobiDateElement.innerHTML = nairobiTime.format("MMMM Do YYYY");
-    nairobiTimeElement.innerHTML = nairobiTime.format("HH:mm");
+    nairobiTimeElement.innerHTML = nairobiTime.format("HH:mm:ss");
 
     //Johannesburg
     let johannesburgElement = document.querySelector("#johannesburg");
@@ -28,7 +28,7 @@ function displayClock () {
 
 
     johannesburgDateElement.innerHTML = johannesburgTime.format("MMMM Do YYYY");
-    johannesburgTimeElement.innerHTML = johannesburgTime.format("HH:mm");
+    johannesburgTimeElement.innerHTML = johannesburgTime.format("HH:mm:ss");
 
     //Denver
     let denverElement = document.querySelector("#denver");
@@ -38,7 +38,7 @@ function displayClock () {
 
 
     denverDateElement.innerHTML = denverTime.format("MMMM Do YYYY");
-    denverTimeElement.innerHTML = denverTime.format("HH:mm");
+    denverTimeElement.innerHTML = denverTime.format("HH:mm:ss");
 }
 
 
