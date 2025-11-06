@@ -1,7 +1,10 @@
 function selectCity(event) {
 
     let cityTimeZone = event.target.value;
-    let cityTime = moment().tz(cityTimeZone);
+    if (cityTimeZone === "current") {
+
+        cityTimeZone = moment.tz.guess();
+    }
     let cityName = cityTimeZone.replace("-", " ").split("/")[1];
     let cityId = cityName.lowercase;
     let replaceCitiesElement = document.querySelector("#replace-cities");
@@ -26,7 +29,7 @@ function selectCity(event) {
             let anyTime = replaceCitiesElement.querySelector(".time");
 
             function setSelectedCityClock() {
-                let liverTime = moment().tz(cityTimeZone);
+                let liverTime = moment().tz(cityTimeZone);;
                 anyCity.innerHTML = liverTime.format("MMMM Do YYYY");
                 anyTime.innerHTML = liverTime.format("HH:mm:ss");
             }
