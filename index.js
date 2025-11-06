@@ -23,7 +23,9 @@ function selectCity(event) {
                         <p id="${cityId}-temp"></p>
                     </div>
                 </div>
-            </div>`;
+            </div>
+            <a href="/">All Cities</a>
+            `;
 
             let anyCity = replaceCitiesElement.querySelector(".date");
             let anyTime = replaceCitiesElement.querySelector(".time");
