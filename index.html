@@ -17,77 +17,82 @@
      <h1>Nande's World Clock</h1>
     <div class="container">
 
-        <select name="countries" id="">
+        <select name="countries" id="countries">
 
-            <option value="">Select a City</option>
-            <option value="tokyo">Tokyo</option>
-            <option value="toronto">Toronto</option>
-            <option value="lisbon">Lisbon</option>
-            <option value="rome">Rome</option>
-            <option value="dubai">Dubai</option>
+            <option value="">Select a City...</option>
+            <option value="Asia/Tokyo">Tokyo</option>
+            <option value="Canada/Toronto">Toronto</option>
+            <option value="Europe/Lisbon">Lisbon</option>
+            <option value="Europe/Rome">Rome</option>
+            <option value="Asia/Dubai">Dubai</option>
+            <option value="Europe/Amsterdam">Amsterdam</option>
+            <option value="Indian/Maldives">Maldives</option>
+            <option value="Europe/London">London</option>
         </select>
 
-        <div class="city-container" id="berlin">
+        <div id="replace-cities">
 
-            <div>
-                <h3>Berlin</h3>
-                <small class="date"></small>
-            </div>
-            <div class="image-time">
+            <div class="city-container" id="berlin">
                 <div>
-                    <span class="time"></span>
+                    <h3>Berlin</h3>
+                    <small class="date"></small>
                 </div>
-                <div class="weather">
-                   <span class="weather-icon"></span>
-                    <p id="berlin-temp"></p>
-                </div>
-            </div>
-        </div>
-
-        <div class="city-container" id="nairobi">
-            <div>
-                <h3>Nairobi</h3>
-                <small class="date">November 3rd 2025</small>
-            </div>
-           <div class="image-time">
-                <div>
-                    <span class="time">14:49</span>
-                </div>
-                <div class="weather">
-                    <div class="weather-icon"></div>
-                    <p id="nairobi-temp">13&deg;</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="city-container" id="johannesburg">
-            <div>
-                <h3>Johannesburg</h3>
-                <small class="date">November 3rd 2025</small>
-            </div>
-            <div class="image-time">
-                <div>
-                    <span class="time">14:49</span>
-                </div>
-                <div class="weather">
+                <div class="image-time">
+                    <div>
+                        <span class="time"></span>
+                    </div>
+                    <div class="weather">
                     <span class="weather-icon"></span>
-                    <p id="johannesburg-temp"></p>
+                        <p id="berlin-temp"></p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="city-container" id="denver">
-            <div>
-                <h3>Denver</h3>
-                <small class="date">November 3rd 2025</small>
-            </div>
-            <div class="image-time">
+            <div class="city-container" id="nairobi">
                 <div>
-                    <span class="time">14:49</span>
+                    <h3>Nairobi</h3>
+                    <small class="date">November 3rd 2025</small>
                 </div>
-                <div class="weather">
-                    <span class="weather-icon"></span>
-                    <p id="denver-temp"></p>
+            <div class="image-time">
+                    <div>
+                        <span class="time">14:49</span>
+                    </div>
+                    <div class="weather">
+                        <div class="weather-icon"></div>
+                        <p id="nairobi-temp">13&deg;</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="city-container" id="johannesburg">
+                <div>
+                    <h3>Johannesburg</h3>
+                    <small class="date">November 3rd 2025</small>
+                </div>
+                <div class="image-time">
+                    <div>
+                        <span class="time">14:49</span>
+                    </div>
+                    <div class="weather">
+                        <span class="weather-icon"></span>
+                        <p id="johannesburg-temp"></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="city-container" id="denver">
+                <div>
+                    <h3>Denver</h3>
+                    <small class="date">November 3rd 2025</small>
+                </div>
+                <div class="image-time">
+                    <div>
+                        <span class="time">14:49</span>
+                    </div>
+                    <div class="weather">
+                        <span class="weather-icon"></span>
+                        <p id="denver-temp"></p>
+                    </div>
                 </div>
             </div>
         </div>
